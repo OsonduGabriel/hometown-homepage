@@ -1,0 +1,118 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+body {
+    margin: 0;
+    font-family: "Happy Monkey", sans-serif;
+    text-align: center;
+    background: #95e979;
+}
+
+img {
+    width: 100px;
+}
+
+#hero{
+    height: 700px;
+    color: white;
+    background-image: url("images/buea.jpg");
+    background-size: cover;
+    text-shadow: 1px 0px 1px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#town{
+
+    background-color: #4b39f1;
+    padding: 10px 20px;
+}
+
+#intro{
+    background-color: #1D3557;
+    padding: 10px 20px;
+    width: 500px;
+}
+
+#activities-header{
+    background: #95e979;
+    margin-top: 0px;
+ }
+
+#activities-section{
+    background: #95e979;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+  
+    margin: 30px 20px;
+}
+
+ #activity-img{
+    border: 3px solid rgb(147, 21, 21);
+    border-radius: 50%;
+    height: 100px;
+ }
+
+ .activity{
+      width: 300px;
+ }
+
+ .activity:hover{
+    box-shadow: 2px 3px 8px #1D3557;
+    padding: 3px 5px;
+ }
+
+ #guide-section{
+    background: rgb(146, 182, 166);
+    display: flex;
+    justify-content: center;
+ }
+
+ #guide{
+    background: #217290 ;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 400px;
+    border-bottom: 12px solid #a83232;
+    margin: 20px auto;
+    padding: 10px 20px;
+ }
+
+ #guide-img{
+    margin: 10px 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+ }
+
+ #footer{
+    background: rgb(146, 182, 166);
+    display: flex;
+    flex-direction: column;
+ }
+
+ #follow-section{
+    display: flex;
+    justify-content: center;
+ }
+
+ #follow-img{
+    width: 30px;
+    height: 30px;
+    margin: 8px 8px;
+ }
+
+a:hover{
+    text-shadow: 0px 0px 2px rgb(139, 25, 25);
+}
