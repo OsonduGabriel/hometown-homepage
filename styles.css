@@ -7,7 +7,7 @@ LIGHT BLUE: #457B9D
 DARK BLUE: #1D3557
 
 */
-
+/* --------GENERIC ITEMS--------- */
 body {
     margin: 0;
     font-family: "Happy Monkey", sans-serif;
@@ -16,98 +16,126 @@ body {
 }
 
 img {
-    width: 100px;
+    max-width: 100%;
+    display: block;
 }
 
-#hero{
-    height: 700px;
-    color: white;
+
+/* -------TYPOGRAPHY---------- */
+h1, h2, h3{
+   font-size: 1.75rem;
+}
+p{
+   font-size: 1rem;
+}
+
+.town{
+    background-color: #4b39f1;
+    padding: 0.75em 1.75em;
+}
+
+.intro{
+    background-color: #1D3557;
+    padding: 0.75em 1.75em;
+    max-width: 90%;
+}
+
+/* ------LAYOUT------- */
+.container{
+   width: 90%;
+   max-width: 900px;
+   margin: 0 auto;
+}
+
+    header{
     background-image: url("images/buea.jpg");
     background-size: cover;
+    }
+
+.hero{
+    min-height: 700px;
+    width: 100%;
+    color: white;
     text-shadow: 1px 0px 1px black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2em;
 }
 
-#town{
 
-    background-color: #4b39f1;
-    padding: 10px 20px;
-}
-
-#intro{
-    background-color: #1D3557;
-    padding: 10px 20px;
-    width: 500px;
-}
-
-#activities-header{
+.activities-header{
     background: #95e979;
-    margin-top: 0px;
  }
 
-#activities-section{
-    background: #95e979;
+.activities-section{
     display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-  
-    margin: 30px 20px;
+    flex-direction: column;
+    align-items:center;
 }
 
- #activity-img{
+ .activity-img{
     border: 3px solid rgb(147, 21, 21);
     border-radius: 50%;
-    height: 100px;
+    margin: 2em auto;
+    width: 100%;
+    max-width: 100px;
+    min-height: 100px;
+    object-fit: cover;
  }
 
  .activity{
-      width: 300px;
+      width: 60%;
  }
 
- .activity:hover{
+ .activity:hover, .activity:focus{
     box-shadow: 2px 3px 8px #1D3557;
-    padding: 3px 5px;
+    padding: 1.25em 1.85em;
  }
 
- #guide-section{
-    background: rgb(146, 182, 166);
-    display: flex;
-    justify-content: center;
- }
 
- #guide{
+ .guide{
     background: #217290 ;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    width: 400px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    max-width: 500px;
     border-bottom: 12px solid #a83232;
-    margin: 20px auto;
-    padding: 10px 20px;
+    margin: 3em auto;
+    padding: 1em 2em;
  }
 
- #guide-img{
-    margin: 10px 10px;
-    width: 150px;
-    height: 150px;
+ .guide-body{
+      width: 70%;
+      order: 1;
+ }
+ .guide-img-holder{
+      width: 20%;
+      order: 0;
+ }
+
+ .guide-img{
+    width: 100%;
+    max-width: 150px;
+    min-height: 150px;
+    object-fit: cover;
     border-radius: 10px;
  }
 
- #footer{
+ footer{
     background: rgb(146, 182, 166);
     display: flex;
     flex-direction: column;
  }
 
- #follow-section{
+ .follow-section{
     display: flex;
     justify-content: center;
  }
 
- #follow-img{
+ .follow-img{
     width: 30px;
     height: 30px;
     margin: 8px 8px;
@@ -115,4 +143,20 @@ img {
 
 a:hover{
     text-shadow: 0px 0px 2px rgb(139, 25, 25);
+}
+
+@media(min-width:675px){
+.activities-section{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin: 0 1em;
+}
+ .activity:hover, .activity:focus{
+    box-shadow: 1px 1px 4px #1D3557;
+    padding: 1.25em 1.85em;
+ }
+ .activity{
+      width: 25%;
+ }
 }
